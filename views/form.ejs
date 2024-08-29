@@ -1,9 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new message</title>
+</head>
+<body>
+  <header>
+    <h1>Mini-Message-Board</h1>
+    <nav>
+      <span>
+        <a href="/">Home</a>
+      </span>
+    </nav>
+  </header>
 
-<form action="/new" method="post">
-    <input type="text" name="messageText" id="messageText">
-    <input type="text" name="messageUser" id="messageUser">
-    <div>
+    <form  method="POST" action="/new">
+      <div>
+        <label for="messageText">Message:</label>
+        <input type="text" name="messageText" id="messageText">
+      </div>
+      <div>
+        <label for="messageUser">Your Name:</label>
+        <input type="text" name="messageUser" id="messageUser">
+      </div>
+                
+      <div>
         <button type="reset">Clear</button>
-        <button type="submit">Send</button>
-    </div>
-</form>    
+        <button type="submit">Submit</button>
+      </div>
+    </form>     
+</body>
+</html>
+   
