@@ -38,7 +38,7 @@ router.post('/new', (res, req) => {
 //
 router.get('/message/:id', (req, res) => {
   const message = messages[req.params.id];
-  res.render('message', {title: "Message Detais", message: message});
+  res.render('message', {title: "Message Details", message: message});
 });
 
 module.exports = router;

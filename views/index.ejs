@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Message-Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,26 +17,24 @@
     </header>
 
 
-    <div>
+    <div class="message-board">
         <% messages.forEach((message)=> { %>
           <div class="message">
+            <p><%= message.text %></p>
             <div class="user">
               <h3> <%= message.user %></h3>
-                <span> <%= message.added.toLocaleString() %></span>
+              <span> <%= message.added.toLocaleString() %></span>
             </div>
-            <p><%= message.text %></p>
             <a href="/message/<%= messages.indexOf(message) %>">Open</a>
           </div>
           <% }) %>
-          <div>
+          <div class="new-message">
             <a href="/new">
               <button type="button">
                 Add a new message
               </button>
             </a>
           </div>
-
-
     </div>
     
 </body>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new message</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -16,13 +17,13 @@
   </header>
 
     <form  method="POST" action="/new">
-      <div>
+      <div class="message-input">
         <label for="messageText">Message:</label>
-        <input type="text" name="messageText" id="messageText">
+        <input type="text" name="messageText" id="messageText" placeholder="your message">
       </div>
-      <div>
-        <label for="messageUser">Your Name:</label>
-        <input type="text" name="messageUser" id="messageUser">
+      <div class="message-input">
+        <label for="messageUser">Name:</label>
+        <input type="text" name="messageUser" id="messageUser" placeholder="your name">
       </div>
                 
       <div>
